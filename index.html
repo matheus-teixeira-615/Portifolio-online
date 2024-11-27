@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title> Portfólio Pessoal </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- buttons -->
+        <div class="retangulo-link">
+            <a href="#sobre-mim" class="button" title="Ir para a seção Sobre Mim">Sobre Mim</a>
+            <a href="#formacao" class="button" title="Ir para a seção Minha Formação">Minha Formação</a>
+            <a href="#portfolio" class="button" title="Ir para a seção Meu Portfólio">Meu Portfólio</a>
+            <a href="#contato" class="button" title="Ir para a seção Meu contato">Meu Contato</a>
+        </div>
+        
+        <!-- criar um button para o modo dark-->
+        <button class="darkmode">Modo Escuro</button>
+    </header>
+
+        <!-- seção Sobre mim -->
+    <section> 
+        <div class="retangulo-resumo-quem-sou" id="sobre-mim">
+            <h1 class="h1">Um resumo de quem sou eu: </h1>
+        </div>  
+        <div class="retangulo-sobre-mim">
+            <p class="eu">Olá, me chamo Matheus Teixeira Diógenes. Sou brasileiro naturalizado e, desde pequeno, sempre tive uma grande curiosidade pelo mundo da tecnologia, algo muito comum entre os jovens nascidos no século 21. Curiosamente, nunca me imaginei como um programador.
+            Durante o início da pandemia de COVID-19, em meio ao caos global, desenvolvi um interesse profundo por virologia. Isso me levou a iniciar um curso técnico em Análises Clínicas, no qual cheguei até o último semestre. No entanto, acabei não concluindo, pois uma paixão antiga e mais intensa voltou a pulsar: a tecnologia e suas possibilidades.
+            Além da tecnologia, também me interesso por filosofia, história, teologia e cosmologia, mas nenhuma dessas áreas me fascina tanto quanto o universo tecnológico e tudo o que podemos criar com ele. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas (ADS) há 7 meses e tenho certeza de que fiz a escolha certa ao mudar de rumo para seguir essa carreira.
+            Sobre minha vida pessoal, posso dizer que sou frequentemente classificado como um "nerd". Gosto de passar o máximo de tempo possível em casa, no meu pequeno quarto, em frente ao computador, jogando, estudando ou aproveitando a companhia dos meus pets. Claro, nem sempre isso é possível, já que o dever cívico do trabalho me chama nos dias úteis.
+            Em suma , tento ser um polímata em construção, aprimorando-me dia após dia e explorando sobre os mais diferentes assuntos que me fascinam. 
+            </p>
+        </div>
+        
+        <!-- seção formação Acadêmica -->
+        <div class="retangulo-formacao" id="formacao">
+            <h1 class="h1">Minha Formação Acadêmica: </h1>
+        </div>  
+
+        <div class="retangulo-minha-formacao">
+            <p class="formacao"> <strong>Grau: </strong> Ensino Médio Completo <br>
+                <strong>Instituição: </strong> E.E Valdir Fernandes Pinto <br>
+                <strong>Período: </strong> Janeiro de 2015 a Outubro de 2017. <br>
+                <br>
+                <br>
+                <strong>Grau: </strong> Tecnológo Em Análises Clínicas <br>
+                <strong>Instituição: </strong> FAMESP- Faculdade Método De São Paulo <br>
+                <strong>Período: </strong> Setembro de 2022 a Trancado. <br>
+                <br>
+                <br>
+                <strong>Grau: </strong> Graduação Em Análise E Desenvolvimento De Sistemas <br>
+                <strong>Instituição: </strong> UNINTER <br>
+                <strong>Período: </strong> Abril de 2024 a Presente Momento. <br> 
+                <br>
+                <br>
+                <strong>Idiomas: </strong> Inglês Americano Avançado.<br>
+                <br>
+                <br>
+            </p>
+        </div>
+
+        <!-- seção Portfólio -->
+        <div class="retangulo-portfolio" id="portfolio">
+            <h1 class="h1">Meu Portfólio: </h1>
+        </div>  
+
+        <div class="retangulo-meu-portfolio">
+            <p class="portfolio"> Filosofia Para Loucos: 
+                <br> 
+                https://matheus-teixeira-615.github.io/Filosofia-Para-Loucos/
+ 
+            </p>
+        </div>
+    </section>
+
+        <!-- seção contato -->
+    <div class="retangulo-contato" id="contato">
+        <h1 class="h1">Contato: </h1>
+    </div>
+
+    <footer class="footer">
+        <form action="" method="post">
+            <label class="nome" for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome:" required>
+            <br>
+            <label class="email" for="email">E-mail: </label>
+            <input type="email" id="email" name="email" placeholder="Seu E-mail: " required>
+            <br>
+            <label class="mensagem" for="mensagem">Digite a sua mensagem: </label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem:" required></textarea>
+            <br>
+            <button class="enviar" type="submit">Enviar </button>
+            <br>
+        </form>
+    </footer>
+    <footer>
+        <div class="retangulo-final">
+            <p class="direitos-autorais" title="Todos os Direitos deste site estão reservados pelo criador do mesmo.">Todos os direitos reservados</p>
+            <p class="creator" title="não reutilizar o site sem aviso prévio do criador do mesmo.">By Matheus Teixeira </p>
+        </div>
+    </footer>
+    <!--Aplicando o modo dark mode -->
+<script>
+    const darkmodebutton = document.querySelector('.darkmode');
+    const body = document.body;
+
+    darkmodebutton.addEventListener('click', function() {
+        body.classList.toggle('dark-mode'); 
+            
+        if (body.classList.contains('dark-mode')) {
+            darkmodebutton.textContent = 'Modo Claro'; 
+        } else {
+            darkmodebutton.textContent = 'Modo Escuro'; 
+            }
+    });
+</script>
+</body>
+</html>
+

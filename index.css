@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding-top: 15vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+.darkmode {
+    position: fixed;
+    left: 20px;
+    top: 12vh;
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #FF7043;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.header, .section {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #B0B0B0;
+    box-sizing: border-box;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+/* Header/Nav da página */
+.retangulo-link {
+    background-color: #0e1924;
+    display: flex;
+    top: 0;
+    border: 1px solid #8a8a8a;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    left: 0;
+}
+/* buttons */
+.button {
+    padding: 10px 20px;
+    font-size: 40px;
+    border: none;
+    text-align: center;
+    position: flex;
+    color: #ffffff;
+    background-color: #FF7043;
+    border-radius: 5px;
+    height: 8vh;
+    width: 400px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+.button:active, .button:focus {
+    background-color: #FFC107;
+}
+
+/* sobre mim */
+.retangulo-resumo-quem-sou, .retangulo-formacao, .retangulo-portfolio, .retangulo-contato  {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 15vh;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode .retangulo-resumo-quem-sou, body.dark-mode .retangulo-formacao, body.dark-mode .retangulo-portfolio, body.dark-mode .retangulo-contato {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.911);
+}
+
+.retangulo-sobre-mim {
+    background-color: #142433;
+    position: relative;
+    width: 90%;
+    height: 25%;
+    border-radius: 20px;
+    margin: 20vh auto 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* formação */
+.retangulo-minha-formacao, .retangulo-meu-portfolio  {
+    background-color: #142433;
+    position: relative;
+    width: 40%;
+    border-radius: 20px;
+    margin: 20vh auto 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.eu, .formacao, .portfolio {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+}
+
+strong {
+    color: #FFC107;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:40px; 
+    position: relative;
+    bottom: 45px;
+}
+/* roda-pé */
+.footer {
+    background-color: #142433;
+    position: relative;
+    width: 70%;
+    border-radius: 20px;
+    margin: 20vh auto 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.nome, .email, .mensagem {
+
+    color: #FFC107;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    margin: 50px;
+    left: 0;
+}
+footer {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* formulario para contato */
+#nome, #email {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    width: 80vh;
+    height: 0;
+    position: relative;
+    top: 20px;
+    left: 20vh;
+    padding: 35px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    border: 1px solid #FFC107;
+    resize: none;
+    
+}
+#mensagem {
+    text-align: center;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 70%;
+    height: 200px;
+    position: relative;
+    top: 20px;
+    left: 20vh;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    border: 1px solid #FFC107;
+    resize: none;
+}
+
+.enviar {
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #47ca2cc5;
+    float: right;
+    position: relative;
+    bottom: 150px;
+    left: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*para deslizar suavamente quando clickar nos buttons */
+html {
+    scroll-behavior: smooth;
+}
+
+#sobre-mim, #formacao, #portfolio, #contato {
+    padding-top: 100px;
+    margin-top: -100px; 
+}
+/*para a tela ficar no lugar correspondente para cada button */
+section > div[id] {
+    scroll-margin-top: 100px;
+}
+
+.direitos-autorais {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    position: fixed;
+    color: #000000;
+    left: 20px;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    float: right;
+}
+.creator {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    position: fixed;
+    color: #000000;
+    left: 90%;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    float: left;
+}
+body.dark-mode .direitos-autorais, body.dark-mode .creator {
+    color: #ffffff;
+}
